@@ -16,5 +16,10 @@ namespace COMP123_S2019_Lab10
         {
             InitializeComponent();
         }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

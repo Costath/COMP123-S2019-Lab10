@@ -28,17 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.WelcomeLabel = new System.Windows.Forms.Label();
+            this.WelcomeMainFormLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // WelcomeLabel
+            // WelcomeMainFormLabel
             // 
-            this.WelcomeLabel.AutoSize = true;
-            this.WelcomeLabel.Location = new System.Drawing.Point(233, 236);
-            this.WelcomeLabel.Name = "WelcomeLabel";
-            this.WelcomeLabel.Size = new System.Drawing.Size(299, 31);
-            this.WelcomeLabel.TabIndex = 0;
-            this.WelcomeLabel.Text = "Welcome to Main Form!";
+            this.WelcomeMainFormLabel.AutoSize = true;
+            this.WelcomeMainFormLabel.Location = new System.Drawing.Point(250, 284);
+            this.WelcomeMainFormLabel.Name = "WelcomeMainFormLabel";
+            this.WelcomeMainFormLabel.Size = new System.Drawing.Size(299, 31);
+            this.WelcomeMainFormLabel.TabIndex = 0;
+            this.WelcomeMainFormLabel.Text = "Welcome to Main Form!";
             // 
             // MainForm
             // 
@@ -46,13 +46,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(784, 561);
-            this.Controls.Add(this.WelcomeLabel);
+            this.Controls.Add(this.WelcomeMainFormLabel);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main Form";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -60,7 +61,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label WelcomeLabel;
+        private System.Windows.Forms.Label WelcomeMainFormLabel;
     }
 }
 
