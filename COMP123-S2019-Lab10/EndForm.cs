@@ -19,9 +19,8 @@ namespace COMP123_S2019_Lab10
 
         private void BackButton_Click(object sender, EventArgs e)
         {
-            MainForm mainForm = new MainForm();
-            mainForm.Show();
-            Hide(); // StartForm.Hide();
+            Program.mainForm.Show();
+            Hide();
         }
 
         private void EndForm_Load(object sender, EventArgs e)
