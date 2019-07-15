@@ -10,24 +10,28 @@ using System.Windows.Forms;
 
 namespace COMP123_S2019_Lab10
 {
-    public partial class StartForm : Form
+    public partial class EndForm : Form
     {
-        public StartForm()
+        public EndForm()
         {
             InitializeComponent();
         }
 
-        private void StartForm_Load(object sender, EventArgs e)
+        private void BackButton_Click(object sender, EventArgs e)
         {
-            SplashTimer.Enabled = true;
-        }
-
-        private void SplashTimer_Tick(object sender, EventArgs e)
-        {
-            SplashTimer.Enabled = false;
             MainForm mainForm = new MainForm();
             mainForm.Show();
             Hide(); // StartForm.Hide();
+        }
+
+        private void EndForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EndForm_Close(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

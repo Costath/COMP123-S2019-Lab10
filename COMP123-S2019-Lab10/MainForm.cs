@@ -21,5 +21,17 @@ namespace COMP123_S2019_Lab10
         {
 
         }
+
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            EndForm endForm = new EndForm();
+            endForm.Show();
+            Hide(); // StartForm.Hide();
+        }
+
+        private void MainForm_Close(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
